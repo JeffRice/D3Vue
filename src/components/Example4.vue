@@ -1,10 +1,8 @@
 <script>
-import LineChart from './LineChart'
 import LineChart2 from './LineChart2'
-import CustomInput from './CustomInput'
 export default {
   components: {
-    LineChart2, LineChart, CustomInput
+    LineChart2
   },
   data() {
     return {
@@ -34,7 +32,7 @@ export default {
             v-model.number="data.linesList[0].array[0]"
           />
 
-       <CustomInput v-model="data.linesList"></CustomInput>
+     
 
 
         <button v-on:click="$emit('enlarge-text')">
@@ -42,11 +40,7 @@ export default {
         </button>
 
 
-<LineChart
-      v-for="item in data.linesList"
-      v-bind:data="item.array"
-      v-bind:key="item.id"
-    ></LineChart>
+
 
 
 
