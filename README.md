@@ -1,4 +1,4 @@
-# hello-world
+# D3Vue
 
 ## Project setup
 ```
