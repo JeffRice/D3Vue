@@ -13,7 +13,7 @@
       :cx="item[0]"
       :cy="item[1]"
       :key="index"
-      :fill="randomRgb"
+      :fill="randomRgb()"
       @click="onClick"
 
     />
@@ -43,7 +43,10 @@ export default {
     }
   },
   methods: {
-
+        randomRgb () {
+    const o = Math.round, r = Math.random, s = 255;
+    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+      },
         onClick(item) {
       console.log('this is the item2!', item, this)
       this.curve =
@@ -52,16 +55,15 @@ export default {
       // Let's flip the data just cause!
       //this.dataset = shuffle(this.dataset)
 
-      const o = Math.round, r = Math.random, s = 255;
-      item.target.style.fill = 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+     // const o = Math.round, r = Math.random, s = 255;
+      item.target.style.fill = this.randomRgb();
     },
     onMouse(item) {
       console.log('moused over item', item, 'moused over this',this)
       console.log(item.target)
 
       // set fill color to a random RGB value on hover
-      const o = Math.round, r = Math.random, s = 255;
-      item.target.style.fill = 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+      item.target.style.fill = this.randomRgb();
     }
   },
   computed: {
@@ -78,10 +80,6 @@ export default {
     d() {
       return this.lineGenerator(this.dataset)
     },
-    randomRgb () {
-    const o = Math.round, r = Math.random, s = 255;
-    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
-}
   }
 }
 </script>

@@ -58,14 +58,10 @@ export default {
   <svg
     class="line-chart"
     :viewBox="viewBox"
-    transform="scale(1, -1)"
+    transform=""
   >
-    <g transform="translate(0, 10)">
+    <g transform="translate(0, 200) scale(1, -1)">
       <path
-        class="line-chart__line"
-        :d="line"
-      />
-      <axis
         class="line-chart__line"
         :d="line"
       />
@@ -77,12 +73,11 @@ export default {
       />
       </g>
 
-    <g transform="translate(0, 0)">
-      <axis
-        class="line-chart__line"
-        :d="line"
-      />
-      </g>
+
+  <g class="tick" opacity="1" transform="translate(176.5,0)">
+    <line stroke="currentColor" y2="6"></line>
+    <text fill="currentColor" y="9" dy="0.71em">0.5</text>
+  </g>      
 
 
 
