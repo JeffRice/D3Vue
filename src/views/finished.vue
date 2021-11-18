@@ -13,7 +13,7 @@
       :cx="item[0]"
       :cy="item[1]"
       :key="index"
-      :fill="randomRgb()"
+      fill="#bbb"
       @click="onClick"
 
     />
@@ -23,7 +23,7 @@
 <script>
 import * as d3 from 'd3-shape'
 //import shuffle from 'lodash/shuffle'
-import dataset from './dataset.json'
+import dataset from '../components/dataset.json'
 export default {
   name: 'ConnectingDots',
   props: {

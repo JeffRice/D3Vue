@@ -1,12 +1,12 @@
 <script>
-import LineChart from './LineChart'
+import LineChart from '../components/LineChart'
 export default {
   components: {
     LineChart
   },
   data() {
     return {
-      data: [199, 171, 78, 25, 36, 92, 33, 25, 11, 99, 105]
+      data: [[10, 60], [40, 90], [60, 10], [190, 10]]
     }
   }
 }

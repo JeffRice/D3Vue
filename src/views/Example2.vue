@@ -1,5 +1,5 @@
 <script>
-import LineChart from './LineChart'
+import LineChart from '../components/LineChart'
 export default {
   components: {
     LineChart

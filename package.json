@@ -1,11 +1,12 @@
 {
-  "name": "hello-world",
+  "name": "vued3svg",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -13,7 +14,9 @@
     "d3-array": "^3.1.1",
     "d3-scale": "^4.0.2",
     "d3-shape": "^3.0.1",
-    "vue": "^2.6.11"
+    "express": "^4.17.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
