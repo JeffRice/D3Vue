@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" class="tinyLogo">
+    <img alt="D3 logo" src="./assets/d3.svg" class="tinyLogo">
+    <HelloWorld msg="Welcome to my Visualizations with Vue!"/>
 
         <div class="nav">
       <RouterLink to="/">Example 1</RouterLink> |
@@ -58,5 +59,9 @@ h2 {
 }
 .nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.tinyLogo {
+  width: 50px;
 }
 </style>

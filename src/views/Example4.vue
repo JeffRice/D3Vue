@@ -1,8 +1,8 @@
 <script>
-import LineChart2 from '../components/LineChart2'
+import LineChart from '../components/LineChart'
 export default {
   components: {
-    LineChart2
+    LineChart
   },
   data() {
     return {
@@ -21,28 +21,36 @@ export default {
 <template>
 <div>
 
-  <div class="form-inputs">
+  <section class="form-inputs">
         <label>
-          Update Data For A given line <br />
+          Update Data For A given line <br /><br />
         </label>
 
-        Chart 1, first input<input
-            v-model.number="data.linesList[0].array[0]"
-          /><br />
-        Chart 2, fourth input<input
-            v-model.number="data.linesList[1].array[3]"
-          /><br />
-         Chart 3, fifth input<input
-            v-model.number="data.linesList[2].array[6]"
-          /><br />
+        <div class="span-33">
+             Chart 1, first input<input v-model.number="data.linesList[0].array[0]" /><br />
+            <input id="margin-x" class="form-control" type="range" min="0" max="100" v-model.number="data.linesList[0].array[0]">
+            {{ data.linesList[0].array[0] }}
+        </div>
+        <div class="span-33">
+            Chart 2, fourth input <input v-model.number="data.linesList[1].array[3]" />
+            <input id="margin-x" class="form-control" type="range" min="0" max="100" v-model.number="data.linesList[1].array[3]">
+            {{ data.linesList[1].array[3] }}
+        </div>
+        <div class="span-33">
+            Chart 3, fifth input <input v-model.number="data.linesList[2].array[6]" />
+            <input id="margin-x" class="form-control" type="range" min="0" max="100" v-model.number="data.linesList[2].array[6]">
+            {{ data.linesList[2].array[6] }}
+        </div>
 
-  </div>
-<LineChart2
+
+
+  </section>
+<LineChart
       v-for="item in data.linesList"
       v-bind:data="item.array"
       v-bind:key="item.id"
-      class="span-25"
-    ></LineChart2>
+      class="span-33"
+    ></LineChart>
  
 </div>    
 </template>
@@ -61,12 +69,14 @@ export default {
     stroke-width: 3px;
 }
 
-.span-25 {
-  width: 25%;
+.span-33 {
+  width: 33%;
+  float: left;
 }
 
 .form-inputs {
   padding: 20px;
+  clear: both;
 }
 
 </style>
