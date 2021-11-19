@@ -34,6 +34,9 @@ export default {
 </script>
 
 <template>
+
+  <p> This is creating SVG circles based on a set of points given to the component. Then a line is drawn with D3 to connect them. If you hover or click on a circle a random color will be generated to fill the circle. Also clicking changes the type of curve applied by D3
+  </p>
   <svg transform="rotate(180) scale(1, -1)" :viewBox="viewBox">
     <circle
       v-for="(item, index) in dataset"

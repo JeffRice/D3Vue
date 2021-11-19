@@ -5,11 +5,10 @@
     <HelloWorld msg="Welcome to my Visualizations with Vue!"/>
 
         <div class="nav">
-      <RouterLink to="/">Example 1</RouterLink> |
-      <RouterLink to="/Example2">Example 2</RouterLink> |
-      <RouterLink to="/Example3">Example 3</RouterLink> |
-      <RouterLink to="/Example4">Example 4</RouterLink> |
-      <RouterLink to="/finished">Circles</RouterLink>
+      <RouterLink to="/">Simple Linecharts 1</RouterLink> |
+      <RouterLink to="/Example2">Simple Linecharts 2</RouterLink> |
+      <RouterLink to="/Example3">Linecharts with Data Binding</RouterLink> |
+      <RouterLink to="/finished">Interactive Circles</RouterLink>
     </div>
     <router-view />
 

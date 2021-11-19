@@ -1,25 +1,3 @@
-<template>
-  <svg :viewBox="viewBox">
-    <path
-      stroke="rgba(146, 55, 255, 0.5)"
-      fill="none"
-      stroke-width="5"
-      :d="d"
-    />
-    <circle
-      r="10"
-      v-for="(item, index) in dataset"
-      @mouseover="onMouse"
-      :cx="item[0]"
-      :cy="item[1]"
-      :key="index"
-      fill="#bbb"
-      @click="onClick"
-
-    />
-  </svg>
-</template>
-
 <script>
 import * as d3 from 'd3-shape'
 //import shuffle from 'lodash/shuffle'
@@ -83,6 +61,34 @@ export default {
   }
 }
 </script>
+
+<template>
+<section>
+  <p> This is creating SVG circles based on a set of points given to the component. Then a line is drawn with D3 to connect them. If you hover or click on a circle a random color will be generated to fill the circle. Also clicking changes the type of curve applied by D3
+  </p>
+  
+  <svg :viewBox="viewBox">
+    <path
+      stroke="rgba(146, 55, 255, 0.5)"
+      fill="none"
+      stroke-width="5"
+      :d="d"
+    />
+    <circle
+      r="10"
+      v-for="(item, index) in dataset"
+      @mouseover="onMouse"
+      :cx="item[0]"
+      :cy="item[1]"
+      :key="index"
+      fill="#bbb"
+      @click="onClick"
+
+    />
+  </svg>
+
+</section>
+</template>
 
 <style scoped>
 path,

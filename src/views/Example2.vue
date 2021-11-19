@@ -1,8 +1,9 @@
 <script>
 import LineChart from '../components/LineChart'
+import LineChart2 from '../components/LineChart2'
 export default {
   components: {
-    LineChart
+    LineChart, LineChart2
   },
   data() {
     return {
@@ -22,14 +23,24 @@ export default {
 </script>
 
 <template>
-<span>
+<section>
+
+  <p>Here the same line chart component is rendered 3 times, but each one is given a different data input. Then a similar component renders the data again only changing the line color.</p>
 
 <LineChart
       v-for="item in data.linesList"
       v-bind:data="item.array"
       v-bind:key="item.id"
+      style="width: 30%"
     ></LineChart>
 
+<LineChart2
+      v-for="item in data.linesList"
+      v-bind:data="item.array"
+      v-bind:key="item.id"
+      style="width: 30%"
+    ></LineChart2>
+
     
-</span>    
+</section>    
 </template>
