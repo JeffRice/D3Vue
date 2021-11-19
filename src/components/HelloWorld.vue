@@ -9,7 +9,7 @@
 
       <li><a href="https://github.com/JeffRice/D3Vue" target="_blank" rel="noopener">View this app's code on Github</a></li>
       <li><a href="https://www.vuejs.org" target="_blank" rel="noopener">Vue.js documentation</a></li>
-      <li><a href="https://www.D3js.org" target="_blank" rel="noopener">D3.JS documentation</a></li>
+      <li><a href="https://D3js.org" target="_blank" rel="noopener">D3.JS documentation</a></li>
     </ul>
   </div>
 </template>
