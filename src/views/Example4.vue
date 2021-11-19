@@ -27,17 +27,17 @@ export default {
         </label>
 
         <div class="span-33">
-             Chart 1, first input<input v-model.number="data.linesList[0].array[0]" /><br />
+             Chart 1, first input<br /><input v-model.number="data.linesList[0].array[0]" /><br />
             <input id="margin-x" class="form-control" type="range" min="0" max="100" v-model.number="data.linesList[0].array[0]">
             {{ data.linesList[0].array[0] }}
         </div>
         <div class="span-33">
-            Chart 2, fourth input <input v-model.number="data.linesList[1].array[3]" />
+            Chart 2, fourth input <br /><input v-model.number="data.linesList[1].array[3]" /><br />
             <input id="margin-x" class="form-control" type="range" min="0" max="100" v-model.number="data.linesList[1].array[3]">
             {{ data.linesList[1].array[3] }}
         </div>
         <div class="span-33">
-            Chart 3, fifth input <input v-model.number="data.linesList[2].array[6]" />
+            Chart 3, fifth input <br /><input v-model.number="data.linesList[2].array[6]" /><br />
             <input id="margin-x" class="form-control" type="range" min="0" max="100" v-model.number="data.linesList[2].array[6]">
             {{ data.linesList[2].array[6] }}
         </div>
