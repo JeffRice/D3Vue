@@ -40,7 +40,7 @@ a {
   color: #42b983;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 p {
   padding: 20px;
