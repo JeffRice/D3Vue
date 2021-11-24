@@ -17,7 +17,7 @@ export default {
 
   <section>
 
-  <p>Here we are using the exact same code to create a Linechart similar to the one above it. The only difference is giving it different data and giving it's container a different width. The axes are automatically scaled to the new data and it all responds to the container size. Resizing the browser will scale everything in the visualization.</p>
+  <p>In the second example we are using the same code to create a Linechart similar to the one above it. The only difference is giving it a different data array and giving it's container a different width. The axes are automatically scaled to the new data and it all responds to the container size. Resizing the browser will scale everything in the visualization.</p>
     <h3>{{ data }}</h3>
 
 
