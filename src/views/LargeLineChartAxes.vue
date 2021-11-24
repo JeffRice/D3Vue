@@ -17,8 +17,7 @@ export default {
 
   <section>
 
-  <p>One of the strengths of Vue is the ability to re-use components throughout an application. Here we have a line chart component that is being reused 3 times to display the same array of data. The visualization is SVG based so it can scale 
-  to fit the size of it's parent container!</p>
+  <p>We have shown that a line can be scaled to fit it's parent container, but what about axis lines? Here we are defining the axes based on the data passed to the visualization. If the amount of values change or the range within the values the axis will change and be responsive to the container.</p>
     <h3>{{ data }}</h3>
 
 

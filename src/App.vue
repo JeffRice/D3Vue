@@ -8,7 +8,8 @@
       <RouterLink to="/">Simple Linecharts 1</RouterLink> |
       <RouterLink to="/Example2">Simple Linecharts 2</RouterLink> |
       <RouterLink to="/Example3">Linecharts with Data Binding</RouterLink> |
-      <RouterLink to="/finished">Interactive Circles</RouterLink>
+      <RouterLink to="/CirclesFinished">Interactive Circles</RouterLink> |
+      <RouterLink to="/AxesExamples">Responsive Axes</RouterLink> 
     </div>
     <router-view />
 

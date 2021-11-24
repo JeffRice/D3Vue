@@ -7,7 +7,7 @@ export default {
   },
   data() {
     return {
-      data: [14, 18, 78, 25, 36, 64, 0, 25, 11, 43, 77]
+      data: [14, 18, 78, 25, 36, 64, 0, 25, 11]
     }
   },
 }
@@ -17,14 +17,13 @@ export default {
 
   <section>
 
-  <p>One of the strengths of Vue is the ability to re-use components throughout an application. Here we have a line chart component that is being reused 3 times to display the same array of data. The visualization is SVG based so it can scale 
-  to fit the size of it's parent container!</p>
+  <p>Here we are using the exact same code to create a Linechart similar to the one above it. The only difference is giving it different data and giving it's container a different width. The axes are automatically scaled to the new data and it all responds to the container size. Resizing the browser will scale everything in the visualization.</p>
     <h3>{{ data }}</h3>
 
 
     <LineChartAxes2
       v-bind="{ data }"
-      style="width: 30%; border: 1px solid #ccc;"
+      style="width: 50%; border: 1px solid #ccc;"
     />
 
   </section>

@@ -26,9 +26,14 @@ const routes = [
     component: () => import('../views/Example4')
   },
   {
-    path: '/finished',
-    name: 'finished',
-    component: () => import('../views/finished')
+    path: '/AxesExamples',
+    name: 'AxesExamples',
+    component: () => import('../views/AxesExamples')
+  },
+  {
+    path: '/CirclesFinished',
+    name: 'CirclesFinished',
+    component: () => import('../views/CirclesFinished')
   }
 ]
 
