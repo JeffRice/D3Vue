@@ -1,5 +1,6 @@
 <template>
   <div class="plot-container">
+           <p>This is another implementation of the axes which renders based on the original size of the browser window. If you resize your window and then refresh it will be drawn to that width, but it will not update the axis until you refresh your browser.</p>
     <svg
       :width="size.width + margin.left + margin.right"
       :height="size.height + margin.top + margin.bottom"
